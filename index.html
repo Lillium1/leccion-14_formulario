@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>Ejercicio Guiado comienzo de HMTL</title>
+</head>
+<body>
+	
+	<!--FORMULARIO-->
+	<h1 align="center">Formulario</h1>
+	<form action="">
+	<center>
+		<!--NOMBRE-->
+		<p>
+			<label for ="name">Nombre</label><br>
+			<input type="text" name="nombre" required />
+		</p>
+		<!--APELLIDO-->
+		<p>
+			<label for ="ape">Apellido</label><br>
+			<input type="text" name="apellido" required />
+		</p>
+		<!--TELEFONO-->
+		<p>
+			<label for ="fono">Teléfono</label><br>
+			<input type="telefono" name="fono" pattern="[0-9]{8}" title="Ingrese nº telefono Ej:91547792" required />
+		</p>
+		<!--DROPDOWN-->
+		<p>
+			<label for ="opcion">Sexo</label><br>
+			<select name="" required> </>
+				<option value="">Selecionar sexo</option>
+				<option value="hombre">Hombre</option>
+				<option value="mujer">Mujer</option>
+			</select>
+		</p>
+		<!--CORREO-->
+		<p>
+			<label for = "correo">Email</label><br>
+			<input type="email" name="correo" title="Ej: mail@ejemplo.com" required />
+		</p>
+		<!--CONTRASEÑA-->
+		<p>
+			<label for = "pw">Contraseña</label><br>
+			<input type="password" name="pw" pattern=".{6,}" title="6 ó más caracteres" required />
+		</p>
+		<!--BOTON-->
+		<p>
+			<input type="submit" name="" value="ENVIAR">
+		</p>
+	</center>
+	</form>
+	<script type="text/javascript" src="assets/js/javascript.js"></script>
+</body>
+</html>
